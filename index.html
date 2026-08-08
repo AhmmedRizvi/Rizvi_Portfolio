@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rizvi Ahmmed — Full-Stack Developer & AI/ML Enthusiast</title>
+  <meta name="description" content="Rizvi Ahmmed — Full-Stack Developer & AI/ML Enthusiast. CSE student building full-stack and AI-powered applications while exploring Machine Learning." />
+  <link rel="canonical" href="https://ahmmedrizvi.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rizvi Ahmmed — Full-Stack Developer & AI/ML Enthusiast" />
+  <meta property="og:description" content="Full-stack developer with real e-commerce experience, now exploring AI/ML and intelligent systems." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Person", "name": "Rizvi Ahmmed", "jobTitle": "Full-Stack Developer & AI/ML Enthusiast", "url": "https://ahmmedrizvi.github.io/" }
+  </script>
+
+  <!-- Tailwind via CDN — no build step required -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { ink: '#0a0a0c', panel: '#101013', line: 'rgba(255,255,255,0.08)', accent: '#7c8cff', accent2: '#a78bfa' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-ink text-neutral-200 font-sans antialiased selection:bg-accent/30">
+
+  <div id="scroll-progress" class="fixed top-0 left-0 h-[2px] bg-gradient-to-r from-accent to-accent2 z-[60]" style="width:0%"></div>
+
+  <!-- Nav -->
+  <header id="site-nav" class="fixed top-4 inset-x-0 z-50 flex justify-center px-4">
+    <nav class="w-full max-w-5xl flex items-center justify-between gap-4 rounded-2xl border border-line bg-panel/70 backdrop-blur-xl px-4 py-3">
+      <a href="#home" class="font-bold tracking-tight text-lg">RIZVI<span class="text-accent">.</span></a>
+
+      <ul class="hidden md:flex items-center gap-6 text-sm text-neutral-400">
+        <li><a href="#home" class="nav-link hover:text-white transition-colors" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link hover:text-white transition-colors" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link hover:text-white transition-colors" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link hover:text-white transition-colors" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link hover:text-white transition-colors" data-section="skills">Skills</a></li>
+        <li><a href="#journey" class="nav-link hover:text-white transition-colors" data-section="journey">Journey</a></li>
+        <li><a href="#contact" class="nav-link hover:text-white transition-colors" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" aria-label="Toggle theme" class="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line text-neutral-400 hover:text-white hover:border-white/20 transition-colors">
+          <svg id="icon-sun" class="h-4 w-4 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg id="icon-moon" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+        <button id="terminal-toggle" aria-label="Open terminal (Ctrl + \`)" class="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line text-neutral-400 hover:text-white hover:border-white/20 transition-colors font-mono text-sm">&gt;_</button>
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-white/90 hover:text-white transition-colors">Let's Talk <span aria-hidden="true">↗</span></a>
+        <button id="mobile-menu-toggle" aria-label="Open menu" class="md:hidden h-9 w-9 inline-flex items-center justify-center rounded-lg border border-line text-neutral-300">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mobile-menu" class="fixed inset-0 z-40 hidden bg-ink/95 backdrop-blur-xl">
+    <div class="flex flex-col items-center justify-center h-full gap-6 text-xl">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#journey" class="mobile-link">Journey</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section id="home" class="relative min-h-[100dvh] flex items-center overflow-hidden px-6 pt-32 pb-20">
+      <div id="hero-bg" class="absolute inset-0 -z-10"></div>
+      <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+        <div class="reveal">
+          <span class="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1 text-xs text-neutral-400 mb-6">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Available for opportunities
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]">
+            I build digital products that
+            <span class="bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent">solve real problems.</span>
+          </h1>
+          <p class="mt-6 text-neutral-400 text-lg max-w-xl leading-relaxed">
+            Full-stack developer with real e-commerce experience, now exploring AI/ML and intelligent systems.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#projects" class="magnetic inline-flex items-center gap-2 rounded-lg bg-white text-black px-5 py-3 text-sm font-semibold hover:bg-neutral-200 transition-colors">View My Work <span aria-hidden="true">→</span></a>
+            <a href="assets/Rizvi-Ahmmed-Resume.pdf" download class="magnetic inline-flex items-center gap-2 rounded-lg border border-line px-5 py-3 text-sm font-semibold text-neutral-200 hover:border-white/30 transition-colors">Download Resume</a>
+          </div>
+          <div id="hero-social" class="mt-10 flex items-center gap-5"></div>
+        </div>
+
+        <div class="reveal">
+          <div class="rounded-2xl border border-line bg-panel/80 backdrop-blur-xl shadow-2xl overflow-hidden font-mono text-sm">
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-line bg-white/[0.03]">
+              <span class="h-3 w-3 rounded-full bg-red-500/70"></span>
+              <span class="h-3 w-3 rounded-full bg-yellow-500/70"></span>
+              <span class="h-3 w-3 rounded-full bg-green-500/70"></span>
+              <span class="ml-3 text-neutral-500 text-xs">rizvi@portfolio ~ %</span>
+            </div>
+            <div id="hero-terminal" class="px-5 py-5 leading-7 text-neutral-300 min-h-[260px]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK STATS -->
+    <section class="border-y border-line reveal">
+      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-line">
+        <div class="px-6 py-10 text-center"><p class="text-3xl md:text-4xl font-extrabold tracking-tight">6+</p><p class="mt-2 text-xs md:text-sm text-neutral-500">Featured Projects</p></div>
+        <div class="px-6 py-10 text-center"><p class="text-3xl md:text-4xl font-extrabold tracking-tight">15+</p><p class="mt-2 text-xs md:text-sm text-neutral-500">Technologies Mastered</p></div>
+        <div class="px-6 py-10 text-center"><p class="text-3xl md:text-4xl font-extrabold tracking-tight">2027</p><p class="mt-2 text-xs md:text-sm text-neutral-500">Expected Graduation</p></div>
+        <div class="px-6 py-10 text-center"><p class="text-3xl md:text-4xl font-extrabold tracking-tight">∞</p><p class="mt-2 text-xs md:text-sm text-neutral-500">Things Left To Build</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="px-6 py-28">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16 items-center">
+        <!-- Photo Container -->
+        <div class="reveal relative group">
+          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-accent to-accent2 opacity-25 blur transition duration-1000 group-hover:opacity-45"></div>
+          <div class="relative rounded-2xl border border-line bg-panel overflow-hidden aspect-[4/5] shadow-2xl">
+            <img src="assets/profile.jpg" alt="Rizvi Ahmmed" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+        </div>
+
+        <!-- Text & Timeline -->
+        <div class="reveal space-y-8">
+          <div>
+            <p class="text-sm text-accent font-semibold mb-3">About Me</p>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">A developer who likes building things from scratch.</h2>
+            <p class="mt-6 text-neutral-400 leading-relaxed">I'm a Computer Science &amp; Engineering student and full-stack developer. I focus on writing clean, performant, and reliable software that translates complex requirements into elegant digital solutions.</p>
+            <p class="mt-4 text-neutral-400 leading-relaxed">These days, I am building full-stack and AI-powered applications while exploring Machine Learning. I split my time between modern full-stack development, experimenting with local LLMs, and laying the groundwork for research-level work in intelligent systems.</p>
+          </div>
+
+          <div class="border-t border-line pt-8">
+            <h3 class="text-sm font-semibold text-neutral-300 mb-6">Development Journey</h3>
+            <ol class="relative border-l border-line ml-2 space-y-6">
+              <li class="pl-6 relative"><span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent"></span><p class="text-sm text-neutral-500">2021 – 2025</p><p class="text-neutral-200 font-medium">Full-stack development across PHP, Django, and modern JS</p></li>
+              <li class="pl-6 relative"><span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent"></span><p class="text-sm text-neutral-500">2025 – present</p><p class="text-neutral-200 font-medium">Building AI-powered applications, exploring ML/DL</p></li>
+              <li class="pl-6 relative"><span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-neutral-600"></span><p class="text-sm text-neutral-500">2027</p><p class="text-neutral-200 font-medium">Expected CSE graduation, moving toward research</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="px-6 py-28 bg-panel/40 border-y border-line">
+      <div class="max-w-5xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Experience</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">Real-world building experience.</h2>
+        <div id="experience-list" class="space-y-8"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="px-6 py-28">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Selected Work</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">Featured Projects</h2>
+        <div id="projects-grid" class="grid md:grid-cols-2 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="px-6 py-28 bg-panel/40 border-y border-line">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Toolbox</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">Technology I work with.</h2>
+        <div id="skills-grid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-8"></div>
+        <p class="text-xs text-neutral-600 mt-6">● amber dot = currently learning</p>
+      </div>
+    </section>
+
+    <!-- CURRENTLY EXPLORING -->
+    <section class="px-6 py-28">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Right now</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">Currently Exploring</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="reveal rounded-2xl border border-line bg-panel/60 p-6 hover:border-accent/30 transition-colors"><h3 class="font-semibold mb-2">AI & Machine Learning</h3><p class="text-sm text-neutral-400 leading-relaxed">Exploring ML/DL concepts and practical AI applications.</p></div>
+          <div class="reveal rounded-2xl border border-line bg-panel/60 p-6 hover:border-accent/30 transition-colors"><h3 class="font-semibold mb-2">Intelligent Applications</h3><p class="text-sm text-neutral-400 leading-relaxed">Building applications around local LLMs and AI assistants.</p></div>
+          <div class="reveal rounded-2xl border border-line bg-panel/60 p-6 hover:border-accent/30 transition-colors"><h3 class="font-semibold mb-2">Full-Stack Engineering</h3><p class="text-sm text-neutral-400 leading-relaxed">Deepening modern backend, API and frontend architecture skills.</p></div>
+          <div class="reveal rounded-2xl border border-line bg-panel/60 p-6 hover:border-accent/30 transition-colors"><h3 class="font-semibold mb-2">Research</h3><p class="text-sm text-neutral-400 leading-relaxed">Building the foundation for future AI/ML research.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="px-6 py-28 bg-panel/40 border-y border-line">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Timeline</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">My Development Journey</h2>
+        <ol id="journey-list" class="relative border-l border-line ml-3 space-y-10"></ol>
+      </div>
+    </section>
+
+    <!-- HOW I BUILD -->
+    <section class="px-6 py-28">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Process</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-14 reveal">Understand. Design. Build. Improve.</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="reveal"><span class="font-mono text-3xl text-neutral-700">01</span><h3 class="mt-3 font-semibold text-lg">Understand</h3><p class="mt-2 text-sm text-neutral-400 leading-relaxed">Understand the actual problem before writing a line of code.</p></div>
+          <div class="reveal"><span class="font-mono text-3xl text-neutral-700">02</span><h3 class="mt-3 font-semibold text-lg">Design</h3><p class="mt-2 text-sm text-neutral-400 leading-relaxed">Plan architecture, data flow, and user experience.</p></div>
+          <div class="reveal"><span class="font-mono text-3xl text-neutral-700">03</span><h3 class="mt-3 font-semibold text-lg">Build</h3><p class="mt-2 text-sm text-neutral-400 leading-relaxed">Implement, test, and iterate.</p></div>
+          <div class="reveal"><span class="font-mono text-3xl text-neutral-700">04</span><h3 class="mt-3 font-semibold text-lg">Improve</h3><p class="mt-2 text-sm text-neutral-400 leading-relaxed">Optimize, learn, and refine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="px-6 py-28 bg-panel/40 border-y border-line">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <p class="text-sm text-accent font-semibold mb-3">Open Source</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-6">On GitHub</h2>
+        <div id="github-repos-container" class="grid sm:grid-cols-2 gap-6 text-left">
+          <div class="col-span-full rounded-2xl border border-dashed border-line p-10 text-center text-neutral-500">
+            <p>GitHub activity isn't connected yet.</p>
+            <p class="text-sm mt-2">Set your username in <span class="font-mono text-neutral-300">js/data.js</span> (<span class="font-mono text-neutral-300">SOCIAL_LINKS.github</span>) and call the public GitHub REST API from <span class="font-mono text-neutral-300">js/script.js</span> to show real repositories here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="px-6 py-28">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-sm text-accent font-semibold mb-3 reveal">Contact</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4 reveal">Let's build something useful.</h2>
+        <p class="text-neutral-400 mb-10 reveal">Have an interesting project, collaboration idea, research opportunity, or simply want to connect?</p>
+
+        <div id="contact-feedback" class="hidden mb-6 rounded-lg border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-sm px-4 py-3"></div>
+
+        <div id="contact-buttons" class="reveal flex flex-wrap gap-3 mb-10"></div>
+
+        <form id="contact-form" class="reveal space-y-5">
+          <div>
+            <label for="name" class="block text-sm text-neutral-400 mb-2">Name</label>
+            <input id="name" name="name" type="text" required class="w-full rounded-lg border border-line bg-panel/60 px-4 py-3 text-sm outline-none focus:border-accent transition-colors" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm text-neutral-400 mb-2">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-lg border border-line bg-panel/60 px-4 py-3 text-sm outline-none focus:border-accent transition-colors" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm text-neutral-400 mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10" class="w-full rounded-lg border border-line bg-panel/60 px-4 py-3 text-sm outline-none focus:border-accent transition-colors"></textarea>
+          </div>
+          <button type="submit" class="magnetic w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-white text-black px-6 py-3 text-sm font-semibold hover:bg-neutral-200 transition-colors">Send Message</button>
+          <p class="text-xs text-neutral-600">This is a static site — sending opens your email app with the message pre-filled. See the README to connect a form backend instead.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROJECT DETAIL VIEW (shown over main content) -->
+  <div id="project-view" class="hidden fixed inset-0 z-30 bg-ink overflow-y-auto">
+    <div id="project-view-content" class="px-6 pt-32 pb-24 max-w-3xl mx-auto"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-line py-12 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div><p class="font-bold text-lg">Rizvi Ahmmed</p><p class="text-sm text-neutral-500 mt-1">Building. Learning. Experimenting.</p></div>
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-400">
+        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#experience" class="hover:text-white transition-colors">Experience</a></li>
+        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+        <li><a href="#skills" class="hover:text-white transition-colors">Skills</a></li>
+        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+      <p class="text-sm text-neutral-600">© 2026 Rizvi Ahmmed</p>
+    </div>
+  </footer>
+
+  <!-- Terminal -->
+  <div id="terminal-overlay" class="fixed inset-0 z-[70] hidden items-start justify-center bg-black/70 backdrop-blur-sm px-4 pt-24">
+    <div class="w-full max-w-2xl rounded-xl border border-line bg-[#0d0d10] shadow-2xl font-mono text-sm overflow-hidden">
+      <div class="flex items-center gap-2 px-4 py-3 border-b border-line bg-white/[0.03]">
+        <span class="h-3 w-3 rounded-full bg-red-500/70"></span><span class="h-3 w-3 rounded-full bg-yellow-500/70"></span><span class="h-3 w-3 rounded-full bg-green-500/70"></span>
+        <span class="ml-3 text-neutral-500 text-xs">rizvi@portfolio ~ %</span>
+        <button id="terminal-close" class="ml-auto text-neutral-500 hover:text-white" aria-label="Close terminal">✕</button>
+      </div>
+      <div id="terminal-output" class="h-80 overflow-y-auto px-4 py-3 space-y-1 text-neutral-300"></div>
+      <div class="flex items-center gap-2 px-4 py-3 border-t border-line">
+        <span class="text-accent">$</span>
+        <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" class="flex-1 bg-transparent outline-none text-neutral-100 placeholder-neutral-600" placeholder="type 'help'" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Command palette -->
+  <div id="palette-overlay" class="fixed inset-0 z-[70] hidden items-start justify-center bg-black/70 backdrop-blur-sm px-4 pt-24">
+    <div class="w-full max-w-lg rounded-xl border border-line bg-[#0d0d10] shadow-2xl overflow-hidden">
+      <input id="palette-input" type="text" autocomplete="off" spellcheck="false" class="w-full bg-transparent outline-none px-4 py-4 text-neutral-100 placeholder-neutral-600 border-b border-line" placeholder="Type a command…" />
+      <ul id="palette-list" class="max-h-80 overflow-y-auto py-2 text-sm"></ul>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
